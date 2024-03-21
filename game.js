@@ -52,8 +52,6 @@ $(document).on("keypress", function(){
 });
 
 function checkAnswer(recentColour){
-    console.log(recentColour);
-    console.log(gamePattern[i]);
     if(recentColour == gamePattern[i]){
         if(userClickedPattern.length == gamePattern.length){
             setTimeout(nextSequence, 1000);
@@ -81,4 +79,5 @@ function startOver(){
     gamePattern = [];
     gameStatus = false;
     i=0;
+    userClickedPattern = [];
 }
